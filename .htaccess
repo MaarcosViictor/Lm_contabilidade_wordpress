@@ -6,11 +6,11 @@
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /wp-Lm_contabilidade/
+RewriteBase /Lm_contabilidade_wordpress/
 RewriteRule ^index\.php$ - [L]
 RewriteCond %{REQUEST_FILENAME} !-f
 RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /wp-Lm_contabilidade/index.php [L]
+RewriteRule . /Lm_contabilidade_wordpress/index.php [L]
 </IfModule>
 
 # END WordPress
